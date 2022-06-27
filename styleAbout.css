@@ -1,0 +1,414 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+body{
+    box-sizing: content-box;
+}
+/* ------------------------------------------------HEADER----------------------------------------------------------- */
+header{
+    min-height: 70px;
+    background-color: black;
+}
+
+.header_contenedor_general_MedicTell{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_Logo_nombre_MedicTell{
+    display: flex;
+    align-items: center;
+}
+.logo_medictell{
+    width: 50px;
+    height: 50px;
+    background-image: url("imagen/Untitled.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header_Logo_nombre_MedicTell h1{
+    color: white;
+    margin: 0 20px 0 10px;
+}
+.header_Logo_nombre_MedicTell span{
+    color: blue;
+}
+
+.header_funciones_Medictell{
+    display: flex;
+    align-items: center;
+}
+.header_funciones_Medictell a{
+    color: white;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.header_busqueda_Medictell{
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 50px;
+}
+.header_busqueda_Medictell input{
+    outline: none;
+    height: 30px;
+    width: 300px;
+    padding-left: 20px;
+    background-color: transparent;
+    background-image: url(imagen/icon_buscar_blanco.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid blue;
+}
+.header_busqueda_Medictell input:hover{
+    border-bottom: 2px solid rgb(0, 153, 255);
+}
+
+.header_Usuario_Medictell{
+    display: flex;
+    align-items: center;
+}
+.Crear-nueva-cuenta{
+    font-weight: bold;
+    width: 150px;
+    background-color: rgb(186, 228, 228);
+    border-radius: 5px;
+    padding: 4px 0;
+    margin: 0 10px;
+}
+.Ingresar-cuenta{
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 150px;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+@media screen and (max-width:1296px){
+    .header_busqueda_Medictell input{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header_contenedor_general_MedicTell{
+        display: flex;
+        flex-direction: column;
+    }    
+    .header_busqueda_Medictell, .header_funciones_Medictell, .header_Logo_nombre_MedicTell
+    ,.header_Usuario_Medictell{
+        width: 100%;
+        font-size: 1rem;
+        margin-top:10px ;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .header_busqueda_Medictell input{
+        min-width: 60%;
+    }
+    .Crear-nueva-cuenta{
+        margin: 0;
+    }
+}
+/* -----------------------------------------------CONTENT BODY-------------------------------------------------------- */
+.body_presentacion_newtec{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(134, 13, 128, 0.5),
+        rgba(0,0,255,0.5)
+    ), url(imagen/medicFonod.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body_presentacion_newtec h1, .body_presentacion_newtec H3{
+    color: white;
+}
+.body_presentacion_newtec h1{
+    color: aqua;
+    font-size: 50px;
+}
+.body_presentacion_newtec h1 span{
+    color: rgb(0, 255, 64);
+}
+.body_presentacion_newtec h3{
+    font-size: 30px;
+}
+
+.body_funcion_newtec{
+    padding: 80px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: rgb(206, 206, 206);
+}
+.body_funcion_newtec h1{
+    color: blue;
+    font-size: 50px;
+}
+.body_funcion_newtec p{
+    padding: 20px 100px;
+    font-size: 30px;
+}
+
+.body_mision_vision_valores{
+    width: 100%;
+    position: relative;
+    display: flex;
+    min-height: 200px;
+}
+.body_mision_vision_valores .mision{
+    width: calc(100% / 3);
+    height: 200px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.body_mision_vision_valores .mision h2{
+    font-size: 40px;
+}
+.body_mision_vision_valores .mision p{
+    font-size: 20px;
+}
+.body_mision_vision_valores .vision{
+    width: calc(100% / 3);
+    height: 200px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(201, 200, 200);
+}
+.body_mision_vision_valores .vision h2{
+    font-size: 40px;
+}
+.body_mision_vision_valores .vision p{
+    font-size: 20px;
+}
+.body_mision_vision_valores .valores{
+    width: calc(100% / 3);
+    height: 200px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body_mision_vision_valores .valores h2{
+    font-size: 40px;
+}
+.body_mision_vision_valores .valores li{
+    font-size: 20px;
+}
+
+.body_integrantes{
+    width: 100%;
+    min-height: 100px;
+    background-color: darkblue;
+    text-align:center ;
+}
+.body_integrantes h1{
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+.body_integrantes h2{
+    padding: 10px;
+    color: rgb(34, 34, 34);
+    font-size: 40px;
+}
+.body_integrantes p{
+    color: black;
+    font-size: 20px;
+}
+.body_integrantes .integrante_Josue{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+}
+.body_integrantes .integrante_Josue .descripcion{
+    width: 60%;
+    min-height: 100px;
+    background-color: rgb(0, 132, 255);
+    padding: 70px;
+}
+.body_integrantes .integrante_Josue .perfil{
+    width: 40%;
+    min-height: 100px;
+    background-color: rgba(1, 152, 172,0.8);
+    background-image: url(imagen/icon_perfil_integrantes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.body_integrantes .integrante_Alexandra{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+}
+.body_integrantes .integrante_Alexandra .descripcion{
+    width: 60%;
+    min-height: 100px;
+    background-color: rgb(5, 189, 174);
+    padding: 70px;
+}
+.body_integrantes .integrante_Alexandra .perfil{
+    width: 40%;
+    min-height: 100px;
+    background-color: rgba(1, 152, 172,0.8);
+    background-image: url(imagen/icon_perfil_integrantes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.body_integrantes .integrante_Jose{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+}
+.body_integrantes .integrante_Jose .descripcion{
+    width: 60%;
+    min-height: 100px;
+    background-color: rgb(0, 132, 255);
+    padding: 70px;
+}
+.body_integrantes .integrante_Jose .perfil{
+    width: 40%;
+    min-height: 100px;
+    background-color: rgba(1, 152, 172,0.8);
+    background-image: url(imagen/icon_perfil_integrantes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.body_integrantes .integrante_Keny{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+}
+.body_integrantes .integrante_Keny .descripcion{
+    width: 60%;
+    min-height: 100px;
+    background-color: rgb(5, 189, 174);
+    padding: 70px;
+}
+.body_integrantes .integrante_Keny .perfil{
+    width: 40%;
+    min-height: 100px;
+    background-color: rgba(1, 152, 172,0.8);
+    background-image: url(imagen/icon_perfil_integrantes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.body_integrantes .integrante_Leonardo{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+}
+.body_integrantes .integrante_Leonardo .descripcion{
+    width: 60%;
+    min-height: 100px;
+    background-color: rgb(0, 132, 255);
+    padding: 70px;
+}
+.body_integrantes .integrante_Leonardo .perfil{
+    width: 40%;
+    min-height: 100px;
+    background-color: rgba(1, 152, 172,0.8);
+    background-image: url(imagen/icon_perfil_integrantes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+.body_video_sobre_nosotros{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background-image: radial-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0)
+    );
+}
+.body_video_sobre_nosotros h1{
+    font-size: 100px;
+}
+.body_video_sobre_nosotros iframe{
+    width: 50%;
+    height: 70%;
+}
+/* ----------------------------------------------FOOTER------------------------------------------------------------ */
+.Contenedor-principal-piedepagina{
+    z-index: 3;
+    bottom: 0;
+    height: 100px;
+    color: white;
+    position: relative; /*relative*/
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombre-servidor-web-piedepagina{
+    padding: 0 20px;
+    border-right: 5px white solid;
+}
+.datos-servicio-piedepagina{
+    padding: 0 0 0 20px;
+}
+.datos-relevantes{
+    margin: 0;
+}
+.sitios-web-piedepagina{
+    padding: 20px;
+}
+.sitios-web-piedepagina img {
+    width: 20px;
+}
+
+@media screen and (max-width:850px){
+    .Contenedor-principal-piedepagina{
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+    }
+    .nombre-servidor-web-piedepagina{
+        border: none;
+        border-bottom: 5px solid white;
+    }
+     .datos-servicio-piedepagina, .sitios-web-piedepagina{
+        margin-top: 20px;
+    }
+}
